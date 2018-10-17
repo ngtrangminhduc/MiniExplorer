@@ -9,7 +9,7 @@
     <string name="Email_here"> Your email</string>
     <string name="registration_complete"> Registration complete</string>
     <string name="login_complete">Login</string>
-    <string name ="main_menu_title">Main Menu</string>
+    <string name="main_menu_title">Main Menu</string>
     <string name="menu_reading">Environment readings</string>
     <string name="menu_explorer_status">Explorer Status</string>
     <string name="menu_settings">Settings</string>

@@ -34,4 +34,24 @@ public class MainMenu extends AppCompatActivity {
         Intent intent = new Intent(MainMenu.this, LoginActivity.class);
         startActivity(intent);
     }
+    public void gotoReadingScreen (View view)
+    {
+        Intent intent = new Intent(MainMenu.this, ReadingScreen.class);
+        startActivity(intent);
+    }
+    public void gotoExplorerScreen (View view)
+    {
+        Intent intent = new Intent(MainMenu.this, ExplorerScreen.class);
+        startActivity(intent);
+    }
+    public void gotoSettingScreen (View view)
+    {
+        Intent intent = new Intent(MainMenu.this, SettingScreen.class);
+        startActivity(intent);
+    }
+    public void gotoAboutUsScreen (View view)
+    {
+        Intent intent = new Intent(MainMenu.this, AboutUsScreen.class);
+        startActivity(intent);
+    }
 }

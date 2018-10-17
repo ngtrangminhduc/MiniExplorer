@@ -20,7 +20,11 @@
             android:name=".NewScreen"
             android:parentActivityName=".LoginActivity" />
         <activity android:name=".RegistrationScreen" />
-        <activity android:name=".MainMenu"></activity>
+        <activity android:name=".MainMenu" />
+        <activity android:name=".ReadingScreen" />
+        <activity android:name=".ExplorerScreen" />
+        <activity android:name=".AboutUsScreen" />
+        <activity android:name=".SettingScreen"></activity>
     </application>
 
 </manifest>
