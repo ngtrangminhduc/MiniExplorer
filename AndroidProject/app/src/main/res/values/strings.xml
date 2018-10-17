@@ -18,6 +18,9 @@
     <string name="menu_return">Return to main menu</string>
     <string name="humidity">Humidity: 80%</string>
     <string name="temperature">Temperature: 18oC</string>
+    <string name="on_off">Power State</string>
+    <string name="on">On</string>
+    <string name="off">Off</string>
     <string name="logout">Log out</string>
     <string name="todo">TODO</string>
     <string name="quit">Quit</string>

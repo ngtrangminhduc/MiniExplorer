@@ -17,4 +17,5 @@ public class ExplorerScreen extends AppCompatActivity {
         Intent intent = new Intent(ExplorerScreen.this, MainMenu.class);
         startActivity(intent);
     }
+
 }
