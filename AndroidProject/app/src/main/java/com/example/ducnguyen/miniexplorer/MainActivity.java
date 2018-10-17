@@ -1,4 +1,4 @@
-package com.example.ducnguyen.lab2;
+package com.example.ducnguyen.miniexplorer;
 
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;

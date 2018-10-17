@@ -1,4 +1,4 @@
-package com.example.ducnguyen.lab2;
+package com.example.ducnguyen.miniexplorer;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
