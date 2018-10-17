@@ -19,6 +19,9 @@
     <string name="humidity">Humidity: 80%</string>
     <string name="temperature">Temperature: 18oC</string>
     <string name="on_off">Power State</string>
+    <string name="low_battery_alert">Low battery alert</string>
+    <string name="scan_intervals">Scan Intervals</string>
+    <string name="auto_shutdown"> Auto Shutdown</string>
     <string name="on">On</string>
     <string name="off">Off</string>
     <string name="logout">Log out</string>
