@@ -9,12 +9,12 @@ import android.content.Intent;
 import android.view.View;
 import android.widget.EditText;
 
-public class MainActivity extends AppCompatActivity {
+public class LoginActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_login);
 
         ActionBar actionBar = getSupportActionBar();
         actionBar.setTitle("Main Activity");
@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void sendMessage (View view) {
-        Intent intent = new Intent (MainActivity.this, NewScreen.class);
+        Intent intent = new Intent (LoginActivity.this, NewScreen.class);
         startActivity(intent);
 
         EditText editText = findViewById(R.id.editText);

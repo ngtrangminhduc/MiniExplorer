@@ -16,9 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.ducnguyen.miniexplorer.MainActivity" />
+        <activity android:name="com.example.ducnguyen.miniexplorer.LoginActivity" />
         <activity android:name="com.example.ducnguyen.miniexplorer.NewScreen"
-            android:parentActivityName="com.example.ducnguyen.miniexplorer.MainActivity"></activity>
+            android:parentActivityName="com.example.ducnguyen.miniexplorer.LoginActivity"></activity>
     </application>
 
 </manifest>

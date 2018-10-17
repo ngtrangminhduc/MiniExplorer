@@ -33,7 +33,7 @@ public class NewScreen extends AppCompatActivity {
         mBtn.setOnClickListener(new View.OnClickListener(){
             @Override
              public void onClick(View view){
-                startActivity(new Intent(NewScreen.this, MainActivity.class));
+                startActivity(new Intent(NewScreen.this, LoginActivity.class));
             }
 
         });
