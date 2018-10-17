@@ -29,4 +29,9 @@ public class MainMenu extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
+    public void gotoLoginScreen (View view)
+    {
+        Intent intent = new Intent(MainMenu.this, LoginActivity.class);
+        startActivity(intent);
+    }
 }
