@@ -5,6 +5,8 @@
     <string name="password_go_here">Your password </string>
     <string name ="password_confirm"> Confirm your password</string>
     <string name ="Create_new_user">Create a new account</string>
+    <string name ="Email">Email</string>
+    <string name ="Email_here"> Your email</string>
     <string name="todo">TODO</string>
     <string name="quit">Quit</string>
     <string name="secret_message_here">secret message here</string>
