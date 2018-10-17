@@ -9,9 +9,9 @@
     <string name="Email_here"> Your email</string>
     <string name="registration_complete"> Registration complete</string>
     <string name="login_complete">Login</string>
+    <string name ="main_menu_title">Main Menu</string>
     <string name="todo">TODO</string>
     <string name="quit">Quit</string>
-    <string name="secret_message_here">secret message here</string>
     <string name="Goback">Return</string>
     <string name="your_message_is">Your Message is:</string>
     <string name="secret_mesage_displayed_here">Secret Mesage Displayed Here</string>
