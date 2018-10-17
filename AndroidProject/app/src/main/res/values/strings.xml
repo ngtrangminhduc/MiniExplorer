@@ -15,6 +15,9 @@
     <string name="menu_settings">Settings</string>
     <string name="menu_about_us">About us</string>
     <string name="menu_live_support">Live support</string>
+    <string name="menu_return">Return to main menu</string>
+    <string name="humidity">Humidity: 80%</string>
+    <string name="temperature">Temperature: 18oC</string>
     <string name="logout">Log out</string>
     <string name="todo">TODO</string>
     <string name="quit">Quit</string>
