@@ -19,7 +19,8 @@
         <activity
             android:name=".NewScreen"
             android:parentActivityName=".LoginActivity" />
-        <activity android:name=".RegistrationScreen"></activity>
+        <activity android:name=".RegistrationScreen" />
+        <activity android:name=".MainMenu"></activity>
     </application>
 
 </manifest>

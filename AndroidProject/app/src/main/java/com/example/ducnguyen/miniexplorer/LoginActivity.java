@@ -57,5 +57,9 @@ public class LoginActivity extends AppCompatActivity {
         Intent intent = new Intent(LoginActivity.this, RegistrationScreen.class);
         startActivity(intent);
     }
-
+    public void gotoMainMenu (View view)
+    {
+        Intent intent = new Intent(LoginActivity.this, MainMenu.class);
+        startActivity(intent);
+    }
 }

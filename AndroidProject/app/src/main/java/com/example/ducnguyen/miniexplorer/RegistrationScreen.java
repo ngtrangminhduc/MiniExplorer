@@ -29,7 +29,7 @@ public class RegistrationScreen extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
-    public void gotoLoginScreen (View view)
+    public void gotoMainMenu (View view)
     {
         Intent intent = new Intent(RegistrationScreen.this, LoginActivity.class);
         startActivity(intent);
