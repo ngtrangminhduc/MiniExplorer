@@ -1,4 +1,4 @@
-package com.example.ducnguyen.miniexplorer;
+package com.example.ducnguyen.lab2;
 
 import org.junit.Test;
 

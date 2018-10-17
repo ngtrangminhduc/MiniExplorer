@@ -3,7 +3,7 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 28
     defaultConfig {
-        applicationId "com.example.ducnguyen.miniexplorer"
+        applicationId "com.example.ducnguyen.assignment2"
         minSdkVersion 21
         targetSdkVersion 28
         versionCode 1
