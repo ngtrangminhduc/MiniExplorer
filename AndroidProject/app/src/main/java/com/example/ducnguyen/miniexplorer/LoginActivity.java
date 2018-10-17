@@ -3,6 +3,7 @@ package com.example.ducnguyen.miniexplorer;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.content.Intent;
@@ -36,7 +37,7 @@ public class LoginActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void sendMessage (View view) {
+    public void sendCredentials (View view) {
         Intent intent = new Intent (LoginActivity.this, NewScreen.class);
         startActivity(intent);
 
@@ -51,5 +52,10 @@ public class LoginActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void gotoRegister (View view)
+    {
+        Intent intent = new Intent(LoginActivity.this, RegistrationScreen.class);
+        startActivity(intent);
+    }
 
 }
