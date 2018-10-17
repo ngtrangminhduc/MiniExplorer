@@ -2,7 +2,8 @@
     <string name="app_name">Mini Explorer</string>
     <string name="user_id">User ID</string>
     <string name="password">Password</string>
-    <string name="password_go_here">Your password goes here</string>
+    <string name="password_go_here">Your password </string>
+    <string name ="password_confirm"> Confirm your password</string>
     <string name ="Create_new_user">Create a new account</string>
     <string name="todo">TODO</string>
     <string name="quit">Quit</string>
