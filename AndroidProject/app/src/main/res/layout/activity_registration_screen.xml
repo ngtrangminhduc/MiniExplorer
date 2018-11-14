@@ -27,7 +27,7 @@
         android:id="@+id/textView7"
         android:layout_width="91dp"
         android:layout_height="45dp"
-        android:layout_marginStart="24dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
         android:text="@string/user_id"
@@ -35,11 +35,11 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.375"
+        app:layout_constraintVertical_bias="0.333"
         tools:text="@string/user_id" />
 
     <EditText
-        android:id="@+id/editText4"
+        android:id="@+id/editTextUsername"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -66,7 +66,7 @@
         tools:text="@string/password" />
 
     <EditText
-        android:id="@+id/editText5"
+        android:id="@+id/editTextPassword"
         android:layout_width="215dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -78,7 +78,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.433"
         app:layout_constraintStart_toEndOf="@+id/textView8"
-        app:layout_constraintTop_toBottomOf="@+id/editText4" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextUsername" />
 
     <TextView
         android:id="@+id/textView9"
@@ -96,7 +96,7 @@
         tools:text="@string/password_confirm" />
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/editTextPasswordConfirmation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
@@ -122,7 +122,7 @@
         app:layout_constraintVertical_bias="0.167" />
 
     <EditText
-        android:id="@+id/editText6"
+        android:id="@+id/editTextEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -133,7 +133,7 @@
         android:inputType="textEmailAddress"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText3"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPasswordConfirmation"
         app:layout_constraintVertical_bias="0.47" />
 
     <Button
