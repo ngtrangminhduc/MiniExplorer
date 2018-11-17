@@ -18,7 +18,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
-public class RegistrationScreen extends AppCompatActivity {
+public class RegistrationScreen extends AppCompatActivity implements View.OnClickListener{
 
     EditText editTextEmail, editTextPassword;
 
@@ -33,6 +33,7 @@ public class RegistrationScreen extends AppCompatActivity {
         editTextPassword = (EditText) findViewById(R.id.editTextPassword);
 
         mAuth = FirebaseAuth.getInstance();
+        findViewById(R.id.buttonRegistration).setOnClickListener(this);
     }
     private void RegisterUser()
     {
@@ -84,6 +85,16 @@ public class RegistrationScreen extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
+
+    public void onClick(View view){
+        switch(view.getId()){
+            case R.id.buttonRegistration:
+                RegisterUser();
+                //gotoLoginScreen();
+                break;
+        }
+    }
+
     public void gotoLoginScreen (View view)
     {
         Intent intent = new Intent(RegistrationScreen.this, LoginActivity.class);
