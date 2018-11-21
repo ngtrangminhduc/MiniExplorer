@@ -114,5 +114,5 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         Intent intent = new Intent(LoginActivity.this, MainMenu.class);
         startActivity(intent);
     }
-     
+
 }

@@ -21,7 +21,7 @@ import com.google.firebase.auth.FirebaseAuthUserCollisionException;
 
 public class RegistrationScreen extends AppCompatActivity implements View.OnClickListener{
 
-    EditText editTextEmail, editTextPassword;
+    EditText editTextEmail, editTextPassword, editTextPasswordConfirmation;
 
     private FirebaseAuth mAuth;
 
@@ -32,6 +32,7 @@ public class RegistrationScreen extends AppCompatActivity implements View.OnClic
 
         editTextEmail = (EditText) findViewById(R.id.editTextEmail);
         editTextPassword = (EditText) findViewById(R.id.editTextPassword);
+        editTextPasswordConfirmation = (EditText) findViewById(R.id.editTextPasswordConfirmation);
 
         mAuth = FirebaseAuth.getInstance();
         findViewById(R.id.buttonRegistration).setOnClickListener(this);
@@ -41,6 +42,7 @@ public class RegistrationScreen extends AppCompatActivity implements View.OnClic
         //Email and Password Initialization
         String email = editTextEmail.getText().toString().trim();
         String password = editTextPassword.getText().toString().trim();
+        String passwordConfirmation = editTextPasswordConfirmation.getText().toString().trim();
 
         if (email.isEmpty()){
             editTextEmail.setError("Email is required");
@@ -60,6 +62,12 @@ public class RegistrationScreen extends AppCompatActivity implements View.OnClic
         if (password.isEmpty()){
             editTextPassword.setError("Password is required");
             editTextPassword.requestFocus();
+            return;
+        }
+        if (!editTextPassword.equals(editTextPasswordConfirmation))
+        {
+            editTextPasswordConfirmation.setError("Your confirmation password is not the same");
+            editTextPasswordConfirmation.requestFocus();
             return;
         }
         mAuth.createUserWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
