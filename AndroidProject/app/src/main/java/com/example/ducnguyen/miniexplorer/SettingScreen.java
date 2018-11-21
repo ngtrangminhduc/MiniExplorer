@@ -88,9 +88,9 @@ public class SettingScreen extends AppCompatActivity {
                 if(!newLowBattery.equals("") || !newScanIntervals.equals("") || !newAutoShutdown.equals("")){
                     FirebaseUser user = mAuth.getCurrentUser();
                     String userID = user.getUid();
-                    myRef.child(userID).child("Settings").child("Low Battery Alert").child(newLowBattery).setValue("true");
-                    myRef.child(userID).child("Settings").child("Scan Intervals").child(newScanIntervals).setValue("true");
-                    myRef.child(userID).child("Settings").child("Auto Shutdown").child(newAutoShutdown).setValue("true");
+                    myRef.child(userID).child("Settings").child("Low Battery Alert").setValue(newLowBattery);
+                    myRef.child(userID).child("Settings").child("Scan Intervals").setValue(newScanIntervals);
+                    myRef.child(userID).child("Settings").child("Auto Shutdown").setValue(newAutoShutdown);
                     toastMessage("Adding new settings to database...");
                     //reset the text
 
