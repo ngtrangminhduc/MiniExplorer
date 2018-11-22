@@ -49,7 +49,16 @@ public class ReadingScreen extends AppCompatActivity {
         // Initiate Firebase
         mAuth = FirebaseAuth.getInstance();
         mFirebaseDatabase = FirebaseDatabase.getInstance();
-        myRef = mFirebaseDatabase.getReference();
+        FirebaseUser user = mAuth.getCurrentUser();
+        String userID = user.getUid();
+
+         // Non-working Reference, but code works
+        //myRef = mFirebaseDatabase.getReference();
+        //myRef = mFirebaseDatabase.getReference().child(userID);
+
+         //Crashing Reference
+          myRef = mFirebaseDatabase.getReference().child(userID).child("ERDataStructure");
+        //myRef = mFirebaseDatabase.getReference("ERDataStructure");
         //
         retrieveData();
     }
@@ -99,6 +108,7 @@ public class ReadingScreen extends AppCompatActivity {
                     //FirebaseUser user = mAuth.getCurrentUser();
                     //String userID = user.getUid();
                     for (DataSnapshot a : dataSnapshot.getChildren()){
+
                         ERDataStructure dataStructure = new ERDataStructure();
                         dataStructure.setTemperature(a.getValue(ERDataStructure.class).getTemperature());
                         dataStructure.setHumidity(a.getValue(ERDataStructure.class).getHumidity());
