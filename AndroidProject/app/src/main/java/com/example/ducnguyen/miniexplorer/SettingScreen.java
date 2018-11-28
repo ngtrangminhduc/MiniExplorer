@@ -42,7 +42,7 @@ public class SettingScreen extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
         mFirebaseDatabase = FirebaseDatabase.getInstance();
         myRef = mFirebaseDatabase.getReference();
-
+        // Not actually required, need to test
         mAuthListener = new FirebaseAuth.AuthStateListener() {
             @Override
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
@@ -60,7 +60,7 @@ public class SettingScreen extends AppCompatActivity {
             }
         };
 
-        // Read from the database
+        // Read from the database, need to test if needed
         myRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {

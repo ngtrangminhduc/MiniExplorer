@@ -29,7 +29,7 @@ public class RegistrationScreen extends AppCompatActivity implements View.OnClic
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registration_screen);
-
+        //Getting the ID from XML file
         editTextEmail = (EditText) findViewById(R.id.editTextEmail);
         editTextPassword = (EditText) findViewById(R.id.editTextPassword);
         editTextPasswordConfirmation = (EditText) findViewById(R.id.editTextPasswordConfirmation);
@@ -37,6 +37,7 @@ public class RegistrationScreen extends AppCompatActivity implements View.OnClic
         mAuth = FirebaseAuth.getInstance();
         findViewById(R.id.buttonRegistration).setOnClickListener(this);
     }
+    // Registration Requirements
     private void RegisterUser()
     {
         //Email and Password Initialization

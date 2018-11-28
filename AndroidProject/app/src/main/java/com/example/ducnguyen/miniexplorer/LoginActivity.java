@@ -38,6 +38,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         //actionBar.setTitle("Main Activity");
     }
     @Override
+    // Basicallly Intent here
     public void onClick(View view)
     {
         switch (view.getId())
@@ -47,7 +48,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 break;
         }
     }
-
+    // Authentication
     private void userLogin(){
         String email = editTextEmail.getText().toString().trim();
         String password = editTextPassword.getText().toString().trim();
@@ -72,6 +73,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             editTextPassword.requestFocus();
             return;
         }
+        // If login successful ==> Go to main menu
         mAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
