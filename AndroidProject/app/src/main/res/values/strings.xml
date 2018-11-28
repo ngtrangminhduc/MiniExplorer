@@ -16,6 +16,7 @@
     <string name="menu_about_us">About us</string>
     <string name="menu_live_support">Live support</string>
     <string name="menu_return">Return to main menu</string>
+    <string name ="login_return">Return to login screen</string>
     <string name="humidity">Humidity: </string>
     <string name="humidity_number"> </string>
     <string name="temperature">Temperature: </string>
