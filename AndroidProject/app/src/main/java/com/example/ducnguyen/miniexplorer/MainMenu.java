@@ -1,5 +1,6 @@
 package com.example.ducnguyen.miniexplorer;
 
+import android.net.Uri;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -70,21 +71,7 @@ public class MainMenu extends AppCompatActivity {
         });
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu,menu);
-        return super.onCreateOptionsMenu(menu);
-    }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        if(item.getItemId()==R.id.user){
-            moveTaskToBack(true);
-            android.os.Process.killProcess(android.os.Process.myPid());
-            System.exit(1);
-        }
-        return super.onOptionsItemSelected(item);
-    }
     public void LogOut (View view)
     {
         mAuth.signOut();
@@ -116,6 +103,14 @@ public class MainMenu extends AppCompatActivity {
     {
         Intent intent = new Intent(MainMenu.this, AboutUsScreen.class);
         startActivity(intent);
+    }
+    public void ContactUs (View view)
+    {
+        String number = "6475713686";
+        Uri call = Uri.parse("tel:" + number);
+        Intent surf = new Intent(Intent.ACTION_DIAL, call);
+        startActivity(surf);
+
     }
     @Override
     public void onStart() {
