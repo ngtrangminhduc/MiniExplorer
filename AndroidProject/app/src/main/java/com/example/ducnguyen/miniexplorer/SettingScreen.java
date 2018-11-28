@@ -95,11 +95,8 @@ public class SettingScreen extends AppCompatActivity {
                     //reset the text
 
                 }
-
             }
         });
-
-
     }
 
 
