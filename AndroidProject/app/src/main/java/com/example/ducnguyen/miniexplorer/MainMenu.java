@@ -85,6 +85,13 @@ public class MainMenu extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
+    public void LogOut (View view)
+    {
+        mAuth.signOut();
+        finish();
+        Intent intent = new Intent (MainMenu.this, LoginActivity.class);
+        startActivity(intent);
+    }
     public void gotoLoginScreen (View view)
     {
         Intent intent = new Intent(MainMenu.this, LoginActivity.class);
