@@ -23,9 +23,6 @@
             </intent-filter>
         </activity>
         <activity android:name=".LoginActivity" />
-        <activity
-            android:name=".NewScreen"
-            android:parentActivityName=".LoginActivity" />
         <activity android:name=".RegistrationScreen" />
         <activity android:name=".MainMenu" />
         <activity android:name=".ReadingScreen" />
