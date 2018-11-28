@@ -31,6 +31,9 @@
     <string name="todo">TODO</string>
     <string name="quit">Quit</string>
     <string name="Goback">Return</string>
+    <string name="Developers">Developers</string>
+    <string name="Duc">Duc Nguyen</string>
+    <string name="Jordan">Jordan Pulido</string>
     <string name="your_message_is">Your Message is:</string>
     <string name="secret_mesage_displayed_here">Secret Mesage Displayed Here</string>
     <string name="secret_message">Secret Message</string>
