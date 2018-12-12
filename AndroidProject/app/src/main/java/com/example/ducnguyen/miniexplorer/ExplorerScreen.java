@@ -78,6 +78,44 @@ public class ExplorerScreen extends AppCompatActivity {
                 Log.w(TAG, "Failed to read value.", error.toException());
             }
         });
+
+        //Writing directions to database
+        arrow_up.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.d(TAG, "onClick: Attempting to add object to database.");
+                FirebaseUser user = mAuth.getCurrentUser();
+                String userID = user.getUid();
+                myRef.child(userID).child("Directions").setValue("Up");
+            }
+        });
+        arrow_down.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.d(TAG, "onClick: Attempting to add object to database.");
+                FirebaseUser user = mAuth.getCurrentUser();
+                String userID = user.getUid();
+                myRef.child(userID).child("Directions").setValue("Down");
+            }
+        });
+        arrow_left.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.d(TAG, "onClick: Attempting to add object to database.");
+                FirebaseUser user = mAuth.getCurrentUser();
+                String userID = user.getUid();
+                myRef.child(userID).child("Directions").setValue("Left");
+            }
+        });
+        arrow_right.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.d(TAG, "onClick: Attempting to add object to database.");
+                FirebaseUser user = mAuth.getCurrentUser();
+                String userID = user.getUid();
+                myRef.child(userID).child("Directions").setValue("Right");
+            }
+        });
     }
     public void gotoMainMenu (View view)
     {
