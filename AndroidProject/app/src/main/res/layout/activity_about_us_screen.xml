@@ -8,13 +8,14 @@
 
     <TextView
         android:id="@+id/textView29"
-        android:layout_width="190dp"
+        android:layout_width="311dp"
         android:layout_height="69dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="152dp"
         android:layout_marginEnd="8dp"
         android:text="@string/menu_about_us"
         android:textSize="40sp"
+        android:gravity="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.564"
         app:layout_constraintStart_toStartOf="parent"

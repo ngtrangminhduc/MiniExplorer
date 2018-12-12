@@ -16,7 +16,6 @@
     <string name="menu_about_us">About us</string>
     <string name="menu_live_support">Live support</string>
     <string name="menu_return">Return to main menu</string>
-    <string name ="login_return">Return to login screen</string>
     <string name="humidity">Humidity: </string>
     <string name="humidity_number"> </string>
     <string name="temperature">Temperature: </string>
@@ -38,6 +37,9 @@
     <string name="your_message_is">Your Message is:</string>
     <string name="secret_mesage_displayed_here">Secret Mesage Displayed Here</string>
     <string name="secret_message">Secret Message</string>
+    <string name="french">French</string>
+    <string name="english">English</string>
+    <string name="translation">Translation</string>
 
 
 </resources>

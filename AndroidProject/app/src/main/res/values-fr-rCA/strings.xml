@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mini Explorer</string>
+    <string name="Developers">"Développeurs"</string>
+    <string name="your_message_is">Votre message est:</string>
+    <string name="low_battery_alert">Alerte de batterie faible</string>
+    <string name="user_id">Identifiant d\'utilisateur</string>
+    <string name="password">Mot de passe</string>
+    <string name="password_go_here">Votre mot de passe</string>
+    <string name="password_confirm">Confirmer votre mot de passe</string>
+    <string name="Create_new_user">Créer un nouveau compte</string>
+    <string name="Email">Email</string>
+    <string name="Email_here">Votre email</string>
+    <string name="registration_complete">" Inscription complète"</string>
+    <string name="login_complete">S\'identifier</string>
+    <string name="main_menu_title">Menu principal</string>
+    <string name="menu_reading">Lectures de l\'environnement</string>
+    <string name="menu_explorer_status">Statut de l\'explorateur</string>
+    <string name="menu_settings">" Réglages"</string>
+    <string name="menu_about_us">À propos de nous</string>
+    <string name="menu_live_support">Support en direct</string>
+    <string name="menu_return">Retour au menu principal</string>
+    <string name="humidity">Humidité</string>
+    <string name="temperature">Température:</string>
+    <string name="on_off">État de puissance</string>
+    <string name="scan_intervals">Intervalles de balayage</string>
+    <string name="auto_shutdown">Extinction automatique</string>
+    <string name="apply">Appliquer</string>
+    <string name="on">Sur</string>
+    <string name="off">De</string>
+    <string name="logout">Connectez - Out</string>
+    <string name="todo">FAIRE</string>
+    <string name="quit">Quitter</string>
+    <string name="Goback">Revenir</string>
+    <string name="secret_message">Message secret</string>
+    <string name="secret_mesage_displayed_here">Message secret affiché</string>
+    <string name="Duc">Duc Nguyen</string>
+    <string name="Jordan">Jordan Pulido</string>
+</resources>

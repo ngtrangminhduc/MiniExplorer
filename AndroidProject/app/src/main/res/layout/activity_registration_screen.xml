@@ -41,13 +41,13 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="12dp"
         android:ems="10"
         android:hint="@string/password_go_here"
         android:inputType="textPassword"
         app:layout_constraintBottom_toTopOf="@+id/editTextPasswordConfirmation"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.928"
+        app:layout_constraintHorizontal_bias="0.428"
         app:layout_constraintStart_toEndOf="@+id/textView8" />
 
     <TextView
@@ -69,29 +69,26 @@
         android:id="@+id/editTextPasswordConfirmation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
         android:layout_marginBottom="204dp"
         android:ems="10"
         android:hint="@string/password_go_here"
         android:inputType="textPassword"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView9" />
 
     <TextView
         android:id="@+id/textView10"
         android:layout_width="70dp"
         android:layout_height="44dp"
-        android:layout_marginStart="28dp"
+        android:layout_marginStart="32dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
         android:text="@string/Email"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView8"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.611" />
+        app:layout_constraintVertical_bias="0.062" />
 
     <EditText
         android:id="@+id/editTextEmail"
@@ -131,7 +128,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="24dp"
-        android:text="@string/login_return"
+        android:text="@string/menu_return"
         android:onClick="gotoLoginScreen"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

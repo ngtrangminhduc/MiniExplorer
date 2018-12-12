@@ -65,12 +65,12 @@ public class RegistrationScreen extends AppCompatActivity implements View.OnClic
             editTextPassword.requestFocus();
             return;
         }
-        if (!passwordConfirmation.equals(password))
+        /*if (!editTextPassword.equals(editTextPasswordConfirmation))
         {
             editTextPasswordConfirmation.setError("Your confirmation password is not the same");
             editTextPasswordConfirmation.requestFocus();
             return;
-        }
+        }*/
         mAuth.createUserWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {

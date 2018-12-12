@@ -1,6 +1,7 @@
 package com.example.ducnguyen.miniexplorer;
 
 import android.content.Intent;
+import android.content.res.Configuration;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -18,6 +19,8 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+import java.util.Locale;
+
 public class SettingScreen extends AppCompatActivity {
     //Firebase Initialization
     FirebaseAuth mAuth;
@@ -29,11 +32,16 @@ public class SettingScreen extends AppCompatActivity {
     private EditText editTextLowBattery, editTextAutoShutdown, editTextScanIntervals;
     private static final String TAG = "SettingScreen";
 
+    private String englishLanguageCode = "en";
+    private Button buttonEnglish, buttonFrench;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_setting_screen);
-
+        buttonEnglish = (Button) findViewById (R.id.buttonEnglish);
+        buttonFrench = (Button) findViewById(R.id.buttonFrench);
         buttonApply = (Button) findViewById(R.id.buttonApply);
         editTextLowBattery = (EditText) findViewById(R.id.editTextLowBattery);
         editTextAutoShutdown = (EditText) findViewById(R.id.editTextAutoShutdown);
@@ -95,8 +103,43 @@ public class SettingScreen extends AppCompatActivity {
                     //reset the text
 
                 }
+
             }
         });
+
+        //Change English to French when user clicked the button.
+        buttonEnglish.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Toast.makeText(getApplicationContext(), "Apply english", Toast.LENGTH_LONG).show();
+                String languageToLoad  = "en";
+                Locale locale = new Locale(languageToLoad);
+                Locale.setDefault(locale);
+                Configuration config = new Configuration();
+                config.locale = locale;
+                getBaseContext().getResources().updateConfiguration(config,
+                        getBaseContext().getResources().getDisplayMetrics());
+
+            }
+        });
+        buttonFrench.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(), "Apply french", Toast.LENGTH_LONG).show();
+                String languageToLoad  = "fr";
+                Locale locale = new Locale(languageToLoad);
+                Locale.setDefault(locale);
+                Configuration config = new Configuration();
+                config.locale = locale;
+                getBaseContext().getResources().updateConfiguration(config,
+                        getBaseContext().getResources().getDisplayMetrics());
+
+
+            }
+        });
+
+
     }
 
 

@@ -4,78 +4,64 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.ducnguyen.miniexplorer.SettingScreen">
+    tools:context="com.example.ducnguyen.miniexplorer.SettingScreen"
+    tools:layout_editor_absoluteY="25dp">
 
     <EditText
         android:id="@+id/editTextLowBattery"
-        android:layout_width="124dp"
-        android:layout_height="43dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_width="0dp"
+        android:layout_height="28dp"
+        android:layout_marginBottom="104dp"
+        android:layout_marginEnd="181dp"
+        android:layout_marginTop="103dp"
         android:ems="10"
         android:inputType="number"
-        app:layout_constraintBottom_toTopOf="@+id/editTextScanIntervals"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonFrench"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.408"
         app:layout_constraintStart_toEndOf="@+id/textView26"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.992" />
+        app:layout_constraintTop_toTopOf="@+id/textView25" />
 
     <EditText
         android:id="@+id/editTextAutoShutdown"
-        android:layout_width="124dp"
-        android:layout_height="41dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="176dp"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="33dp"
+        android:layout_marginEnd="185dp"
+        android:layout_marginTop="27dp"
         android:ems="10"
         android:inputType="number"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextLowBattery"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.423"
         app:layout_constraintStart_toEndOf="@+id/textView28"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.909" />
+        app:layout_constraintTop_toBottomOf="@+id/textView25" />
 
     <EditText
         android:id="@+id/editTextScanIntervals"
-        android:layout_width="126dp"
-        android:layout_height="42dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="92dp"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="183dp"
         android:ems="10"
         android:inputType="number"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.44"
         app:layout_constraintStart_toEndOf="@+id/textView27"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/buttonApply"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="24dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginStart="20dp"
         android:text="@string/apply"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintBottom_toTopOf="@+id/textView24"
+        app:layout_constraintStart_toStartOf="@+id/textView24" />
 
     <TextView
         android:id="@+id/textView24"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="4dp"
+        android:layout_marginBottom="3dp"
         android:onClick="gotoMainMenu"
         android:text="@string/menu_return"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -86,62 +72,76 @@
         android:id="@+id/textView25"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
+        android:layout_marginEnd="55dp"
         android:layout_marginTop="24dp"
-        android:layout_marginEnd="8dp"
         android:text="@string/menu_settings"
         android:textSize="30sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/editTextAutoShutdown"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView26"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="145dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="141dp"
         android:text="@string/low_battery_alert"
-        app:layout_constraintBottom_toTopOf="@+id/textView27"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.059"
+        app:layout_constraintEnd_toStartOf="@+id/editTextLowBattery"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.847" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView28"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginEnd="151dp"
+        android:layout_marginStart="36dp"
         android:text="@string/auto_shutdown"
         app:layout_constraintBottom_toTopOf="@+id/textView26"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.058"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.818" />
+        app:layout_constraintEnd_toStartOf="@+id/editTextAutoShutdown"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView27"
         android:layout_width="wrap_content"
-        android:layout_height="23dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="159dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="18dp"
         android:text="@string/scan_intervals"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.057"
+        app:layout_constraintEnd_toStartOf="@+id/editTextScanIntervals"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toBottomOf="@+id/textView26" />
+
+    <TextView
+        android:id="@+id/textViewTranslation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="27dp"
+        android:text="@string/translation"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView27" />
+
+    <Button
+        android:id="@+id/buttonEnglish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/english"
+        app:layout_constraintStart_toStartOf="@+id/buttonApply"
+        app:layout_constraintTop_toBottomOf="@+id/editTextScanIntervals" />
+
+    <Button
+        android:id="@+id/buttonFrench"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/french"
+        app:layout_constraintStart_toEndOf="@+id/editTextScanIntervals"
+        app:layout_constraintTop_toBottomOf="@+id/editTextScanIntervals" />
 
 </android.support.constraint.ConstraintLayout>
