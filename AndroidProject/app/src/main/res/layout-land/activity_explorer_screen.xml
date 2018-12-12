@@ -36,7 +36,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView8"
+        android:id="@+id/arrow_down"
         android:layout_width="61dp"
         android:layout_height="76dp"
         android:layout_marginStart="8dp"
@@ -46,11 +46,11 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView13"
+        app:layout_constraintTop_toBottomOf="@+id/arrow_up"
         app:srcCompat="@drawable/downarrow" />
 
     <ImageView
-        android:id="@+id/imageView9"
+        android:id="@+id/arrow_left"
         android:layout_width="61dp"
         android:layout_height="76dp"
         android:layout_marginStart="8dp"
@@ -65,7 +65,7 @@
         app:srcCompat="@drawable/leftarrow" />
 
     <ImageView
-        android:id="@+id/imageView13"
+        android:id="@+id/arrow_up"
         android:layout_width="60dp"
         android:layout_height="76dp"
         android:layout_marginStart="8dp"
@@ -80,7 +80,7 @@
         app:srcCompat="@drawable/uparrow" />
 
     <ImageView
-        android:id="@+id/imageView14"
+        android:id="@+id/arrow_right"
         android:layout_width="61dp"
         android:layout_height="76dp"
         android:layout_marginStart="8dp"
