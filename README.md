@@ -18,41 +18,68 @@ Duc Nguyen, Jordan Pulido
 TABLE OF CONTENTS
 
 Introduction
+
 Software Design and Specifications
+
 Data Structure
+
 Database Design
+
 Hardware Design to Database Structure Implementation Plan
+
 Test cases 
+
 Android Components
+
 Contribution
+
 Conclusion
+
 References
 
 
 Abstract
+
 Taking advantage of technology to perform tasks that seem harmful to humans is what drives our creativity and innovation forward. Such one task is to evaluate environment conditions in certain surroundings. Some places are unreachable and thus, require small devices with enough functionalities and specifications to reach such locations. Mini Explorer Project is born to perform such activities: Approach small places (with slippery surfaces) and obtain environment readings from them.  This project includes extensive research on certain hardware, software and database integration from multiple different sources. For the purpose of this report, we will only focus mainly on the software aspect.
 
+
   I.    Introduction
+  
 Mini Explorer consists of three main parts: Hardware, software, and database. The hardware backbone is the Raspberry Pi 3B+ Model, which acts as a central processing unit for every function. Along with it are three sensors: HDC1008 (Temperature and Humidity Sensor), PCA9685 (16-channel 12-bit PWM/Servo driver) and VL53L0X (Time of Flight Distance Sensor). The software is entirely written on Android Project, as the Mini Explorer is expected to be entirely controlled through the phone via Bluetooth. The database is stored on Firebase - a cloud service by Google. This is where all users’ information, environmental readings, device settings and logs are stored. All three main parts are interconnected and closely related. For visual purposes, this UML diagram will give a more thorough understanding of the whole system.
 
-Figure 1 - UML Diagram of Mini Explorer
 
 II. Software Design and Specifications
+
 This is the main focus of the report, as it describes thoroughly the software aspect of the project.
+
 II.1 Software Design 
+
 The software is to be developed by two people with no prior experience in mobile programming / development within nearly three months. With such resources, the software design is fairly simple. It consists of two main elements: Java Front-end / Back-end development and database development. While they are not entirely dependent on each other, they have the same priority level, as both of them are crucial to the application and can be developed at the same time. 
+
 The Java Front-end determines the appearance of all elements contained within the app, and the user experience the app is expected to bring. It includes, but not limited to, creating and manipulating icons, layouts, text, buttons. As of current, the app contains 8 different screens, each with its own way of design so as to serve its functions. The app also uses 13 different, specifically-customized icons ; 41 text strings, available in both English and French. 
+
 The Java Back-end determines how the app is going to be executed by the users. It consists of, but not limited to, authentication, intents, events and is used in all screens. The screens and their functionalities are:
+
 1.  Splash screen: Acts as a launcher, will go to the login screen after 0.5 seconds of showing the app’s icon.
+
 2. Login screen: Prompts the user to enter their email and password, and then check with the database. If the typed information is not correct, then the user cannot log in. Also has a intent to display the register screen if the user wished to.   
+
 	3. Registration screen: Allows users to register with email and password. Users must enter a legit email format, and confirm their password to register successfully.  Data is then sent to database.
+	
 4. Main menu screen: Shows all other main screens that users can go to. Clicking on the live support will not take you to a new screen, but instead, redirect you to the call activity of your phone.
+
 5. Reading screen: Displays the temperature and humidity retrieved from database
+
 6. Explorer screen: Shows the car’s control and power state. Users can control the car’s movement and power in this screen.
+
 7. Setting screen: Displays the language option, and certain settings that can be applied to the hardware (low-battery alert, scan intervals, and auto-shutdown timer).
+
 8. About us screen: Displays the developers’ names.
-Listing and purposes of functions/methods being used will be discussed in part VIII.
-The database development is started on the second-half of the project timeline. The database is stored on Firebase - a free Google cloud service - which is integrated in Android Studio as well. The database design will also be discussed on part V.
+
+Listing and purposes of functions/methods being used will be discussed in part VII.
+
+The database development is started on the second-half of the project timeline. The database is stored on Firebase - a free Google cloud service - which is integrated in Android Studio as well. The database design will also be discussed on part IV.
+
 The requirements for the software are rather straightforward. The software should not crash or contain any bugs at all times, is expected to deliver its full functionalities, which include:
 Execute all tasks properly and flawlessly without bugs / crashes.
 Being able to register and login / logout users.
