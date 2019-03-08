@@ -29,7 +29,7 @@ public class ExplorerScreen extends AppCompatActivity {
     FirebaseDatabase mFirebaseDatabase;
     private static final String TAG = "ExplorerScreen";
 
-    private ImageView arrow_up,arrow_down,arrow_left,arrow_right ;
+    private ImageView arrow_up,arrow_down,arrow_left,arrow_right, hold_button ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,6 +39,7 @@ public class ExplorerScreen extends AppCompatActivity {
         arrow_left = (ImageView) findViewById (R.id.arrow_left);
         arrow_down = (ImageView) findViewById (R.id.arrow_down);
         arrow_right = (ImageView) findViewById (R.id.arrow_right);
+        hold_button = (ImageView) findViewById(R.id.holdarrow);
 
         //Firebase stuff
         mAuth = FirebaseAuth.getInstance();
@@ -84,36 +85,48 @@ public class ExplorerScreen extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Log.d(TAG, "onClick: Attempting to add object to database.");
-                FirebaseUser user = mAuth.getCurrentUser();
+                /*FirebaseUser user = mAuth.getCurrentUser();
                 String userID = user.getUid();
-                myRef.child(userID).child("Directions").setValue("Up");
+                myRef.child(userID).child("Directions").setValue("Up"); */
+                myRef.child("Movement").child("Back_wheel").setValue("Forward");
             }
         });
         arrow_down.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Log.d(TAG, "onClick: Attempting to add object to database.");
-                FirebaseUser user = mAuth.getCurrentUser();
+               /* FirebaseUser user = mAuth.getCurrentUser();
                 String userID = user.getUid();
-                myRef.child(userID).child("Directions").setValue("Down");
+                myRef.child(userID).child("Directions").setValue("Down");*/
+                myRef.child("Movement").child("Back_wheel").setValue("Backward");
             }
         });
         arrow_left.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Log.d(TAG, "onClick: Attempting to add object to database.");
-                FirebaseUser user = mAuth.getCurrentUser();
+               /* FirebaseUser user = mAuth.getCurrentUser();
                 String userID = user.getUid();
-                myRef.child(userID).child("Directions").setValue("Left");
+                myRef.child(userID).child("Directions").setValue("Left"); */
+                myRef.child("Movement").child("Front_wheel").setValue("Left");
             }
         });
         arrow_right.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Log.d(TAG, "onClick: Attempting to add object to database.");
-                FirebaseUser user = mAuth.getCurrentUser();
+              /*  FirebaseUser user = mAuth.getCurrentUser();
                 String userID = user.getUid();
-                myRef.child(userID).child("Directions").setValue("Right");
+                myRef.child(userID).child("Directions").setValue("Right"); */
+                myRef.child("Movement").child("Back_wheel").setValue("Right");
+            }
+        });
+        hold_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.d(TAG, "onClick: Attempting to add object to database.");
+                myRef.child("Movement").child("Front_wheel").setValue("Hold");
+                myRef.child("Movement").child("Back_wheel").setValue("Hold");
             }
         });
     }
