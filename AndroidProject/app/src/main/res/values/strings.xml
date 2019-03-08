@@ -40,4 +40,5 @@
     <string name="french">French</string>
     <string name="english">English</string>
     <string name="translation">Translation</string>
+    <string name="Automatic"> Automatic </string>
 </resources>

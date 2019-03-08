@@ -8,8 +8,10 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.Switch;
 import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
@@ -30,6 +32,8 @@ public class ExplorerScreen extends AppCompatActivity {
     private static final String TAG = "ExplorerScreen";
 
     private ImageView arrow_up,arrow_down,arrow_left,arrow_right, hold_button ;
+    private Switch automatic_switch;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,6 +44,7 @@ public class ExplorerScreen extends AppCompatActivity {
         arrow_down = (ImageView) findViewById (R.id.arrow_down);
         arrow_right = (ImageView) findViewById (R.id.arrow_right);
         hold_button = (ImageView) findViewById(R.id.holdarrow);
+        automatic_switch = (Switch) findViewById(R.id.automatic_switch);
 
         //Firebase stuff
         mAuth = FirebaseAuth.getInstance();
@@ -127,6 +132,19 @@ public class ExplorerScreen extends AppCompatActivity {
                 Log.d(TAG, "onClick: Attempting to add object to database.");
                 myRef.child("Movement").child("Front_wheel").setValue("Hold");
                 myRef.child("Movement").child("Back_wheel").setValue("Hold");
+            }
+        });
+        automatic_switch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (isChecked){
+                Log.d(TAG, "onClick: Attempting to add object to database.");
+                myRef.child("Movement").child("Automatic").setValue("Yes");
+            } else {
+                    Log.d(TAG, "onClick: Attempting to add object to database.");
+                    myRef.child("Movement").child("Automatic").setValue("No");
+                }
+
             }
         });
     }
