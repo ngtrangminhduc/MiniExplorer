@@ -123,7 +123,7 @@ public class ExplorerScreen extends AppCompatActivity {
               /*  FirebaseUser user = mAuth.getCurrentUser();
                 String userID = user.getUid();
                 myRef.child(userID).child("Directions").setValue("Right"); */
-                myRef.child("Movement").child("Back_wheel").setValue("Right");
+                myRef.child("Movement").child("Front_wheel").setValue("Right");
             }
         });
         hold_button.setOnClickListener(new View.OnClickListener() {
