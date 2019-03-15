@@ -25,13 +25,13 @@
         android:layout_width="302dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="4dp"
         android:layout_marginEnd="8dp"
+        android:gravity="center"
         android:text="@string/menu_explorer_status"
         android:textSize="30sp"
-        android:gravity="center"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -45,9 +45,9 @@
         android:layout_marginBottom="68dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/arrow_up"
-        app:layout_constraintVertical_bias="0.905"
+        app:layout_constraintTop_toBottomOf="@+id/arrow_left"
         app:srcCompat="@drawable/downarrow" />
 
     <ImageView
@@ -71,14 +71,12 @@
         android:layout_width="60dp"
         android:layout_height="76dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="88dp"
+        android:layout_marginTop="36dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintTop_toBottomOf="@+id/textView23"
         app:srcCompat="@drawable/uparrow" />
 
     <ImageView
@@ -101,15 +99,17 @@
         android:id="@+id/holdarrow"
         android:layout_width="60dp"
         android:layout_height="81dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/arrow_down"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.509"
+        app:layout_constraintTop_toBottomOf="@+id/arrow_up"
+        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/holdarrow" />
     <Switch
-        android:id="@+id/switch1"
+        android:id="@+id/automatic_switch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
