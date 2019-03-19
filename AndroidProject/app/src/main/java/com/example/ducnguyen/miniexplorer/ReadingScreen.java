@@ -58,7 +58,7 @@ public class ReadingScreen extends AppCompatActivity {
 
          //Crashing Reference
           //myRef = mFirebaseDatabase.getReference().child(userID).child("ERDataStructure");
-            myRef = mFirebaseDatabase.getReference("Environment");
+            myRef = mFirebaseDatabase.getReference().child("Environment");
         //
         retrieveData();
     }
